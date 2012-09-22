@@ -54,7 +54,7 @@ private
   end
 
   def set_user
-    self.user = Auditor::User.current_user if self.user_id.nil?
+    self.user = Auditor::User.current_user if self.account_id.nil?
   end
 
 end
